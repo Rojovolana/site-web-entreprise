@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nos services</title>
+    <style>
+      /* CSS pour les titres */
+      h1 {
+        color: #2c3e50;
+        font-size: 36px;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      h2 {
+        color: #27ae60;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      /* CSS pour les listes */
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 20px;
+      }
+
+      li:before {
+        content: "\2022";
+        color: #27ae60;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+
+      /* CSS pour les images */
+      .image-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+      }
+
+      .image-container img {
+        width: 30%;
+        border: 5px solid #27ae60;
+        border-radius: 10px;
+      }
+
+      /* CSS pour les paragraphes */
+      p {
+        margin-top: 20px;
+        line-height: 1.5;
+      }
+
+      /* CSS pour les liens */
+      a {
+        color: #27ae60;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation de l'entreprise</a></li>
+        <li><a href="produits.html">Nos produits</a></li>
+        <li><a href="services.html">Nos services</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+      </ul>
+    </nav>
+    <h1>Contactez-nous</h1>
+    <p>Remplissez le formulaire ci-dessous pour nous contacter :</p>
+    <form action="envoyer.php" method="post">
+      <label for="nom">Nom <span class="required">*</span></label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="sujet">Sujet <span class="required">*</span></label>
+      <input type="text" id="sujet" name="sujet" required>
+
+      <label for="message">Message <span class="required">*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Envoyer">
+    </form>
+
+    <p>Vous pouvez également nous contacter à l'adresse suivante :</p>
+    <address>
+      Nanisana face arrêt bus paompy<br>
+      034<br>
+      <a href="mailto:contact@monentreprise.com">contact@monentreprise.com</a>
+    </address>
+  </body>
+</html>
